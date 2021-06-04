@@ -5,3 +5,5 @@ const Chat = () => {
     <h1>Start Chating</h1>
   )
 }
+
+export default Chat
