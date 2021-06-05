@@ -5,6 +5,7 @@ import './Chat.css'
 
 import InfoBar from '../infoBar/InfoBar'
 import Input from '../input/Input'
+// import Messages from '../messages/Messages'
 let socket
 
 const Chat = ({ location }) => {
@@ -44,6 +45,8 @@ const Chat = ({ location }) => {
       socket.emit('sendMessage', message, () => setMessage(''))
     }
   }
+
+  console.log(message, messages)
 
   return (
     <div className="outerContainer">
